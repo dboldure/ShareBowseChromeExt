@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de pestañas</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel= "stylesheet" type= "text/css" href= "/css/main.css"/>
+
+    <script src="/libreriasJS/jquery-3.2.1.slim.min.js"></script>
+    <script src="/libreriasJS/bootstrap.min.js"></script>
+</head>
+<body>
+<header class="header-section" style="	padding-top: 50px; padding-bottom: 10px;">
+    <div class="container">
+        <div class="logo" style="  text-align: center;  margin-bottom: 30px;">
+            <a href="./index.html" style="display: inline-block;"><img src="img/share.jpg" alt=""></a>
+        </div>
+        <div class="nav-menu" style="position: relative; margin-bottom: 50px;">
+            <nav class="main-menu">
+                <ul>
+                    <li class="active"><a href="#">Ver Pestañas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<section class="container_menu" style=" padding-bottom: 110px; margin-bottom: 110px;">
+    <div class="container">
+        <table class="table">
+            <thead class="thead-dark" >
+            <tr>
+                <th scope="col">Índice</th>
+                <th scope="col">URL</th>
+            </tr>
+            </thead>
+            <tbody id="tablita" ></tbody>
+        </table>
+    </div>
+</section>
+<footer class="footer" style="  background: #e5e0e0;  width: 100%; text-align: center; padding: 1em; align-self: flex-end;" ></footer>
+<script src="mostrarPestanas.js"> </script>
+</body>
+</html>

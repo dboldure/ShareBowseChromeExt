@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Necesario inicio de sesión</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel= "stylesheet" type= "text/css" href= "/css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
+		<script src="/libreriasJS/jquery-3.2.1.slim.min.js"></script>
+		<script src="/libreriasJS/bootstrap.min.js"></script>
+	</head>
+    <body>
+		<div class="container-fluid">
+			<div class="row justify-content-center mt-3" style="min-width: 200px;">
+				<div class="card bg-light col-12" id="divInicioSesion" hidden>
+					<h1 class="card-header">Iniciar Sesión</h1>
+					<div class="card-body">
+						<div class="row justify-content-center mb-3"><input class="form-control card-text" id="usernameID" type="text" name="username" placeholder="mail@example.ext"></div>
+						<div class="row justify-content-center mb-3"><input class="form-control card-text" id="passwordID" type="password" name="password" placeholder="Contraseña"></div>
+						<div class="row justify-content-center mb-3"><button class="card-text btn btn-dark" id="buttonID" type="submit">Iniciar sesión</button></div>
+						<div class="row justify-content-center mb-3"><button class="card-text btn btn-dark" id="buttonregistroID" type="submit">Registrarse</button></div>
+						<div class="row justify-content-center"><div class="alert alert-danger" id="errorLogIn" role="alert" hidden></div></div>
+					</div>
+				</div>
+				<div class="container" id="divMenu" hidden>
+					<h1 id="usernameTitle"></h1>
+					<hr />
+					<button type="button" class="btn btn-primary btn-lg btn-block" id="btnHistorial">Historial</button>
+					<button type="button" class="btn btn-primary btn-lg btn-block" id="btnMaracadores">Marcadores</button>
+					<button type="button" class="btn btn-primary btn-lg btn-block" id="btnPestanas">Pestañas</button>
+					<button type="button" class="btn btn-primary btn-lg btn-block" id="btnVentanas">Ventanas</button>
+					<button type="button" class="btn btn-primary btn-lg btn-block" id="btnUsuario">Usuario</button>
+					<button type="button" class="btn btn-secondary btn-lg btn-block" id="btnCerrarSesion">Cerrar sesión</button>
+					<br/>
+				</div>
+			</div>
+		</div>		  
+		<script src="loginSession.js"></script> 
+	</body>
+</html>

@@ -1,0 +1,118 @@
+html,
+body {
+    height: 100%;
+    font-family: "PT Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    background: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+    outline: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+[class^=flaticon-]:before,
+[class*=" flaticon-"]:before,
+[class^=flaticon-]:after,
+[class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-size: 91px;
+    font-style: normal;
+}
+
+.set-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.spad {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.header-section .nav-menu .main-menu {
+    text-align: center;
+}
+
+.header-section .nav-menu .main-menu ul li {
+    display: inline-block;
+    margin-right: 30px;
+    position: relative;
+}
+
+.header-section .nav-menu .main-menu ul li:last-child {
+    margin-right: 0;
+}
+
+.header-section .nav-menu .main-menu ul li:last-child:after {
+    display: none;
+}
+
+.header-section .nav-menu .main-menu ul li:hover a {
+    color:#a92020;
+}
+
+.header-section .nav-menu .main-menu ul li:hover a:after {
+    opacity: 1;
+}
+
+.header-section .nav-menu .main-menu ul li.active a {
+    color: #a92020;
+}
+
+.header-section .nav-menu .main-menu ul li.active a:after {
+    opacity: 1;
+}
+
+.header-section .nav-menu .main-menu ul li:after {
+    position: absolute;
+    right: -35px;
+    top: 4px;
+    height: 21px;
+    width: 2px;
+    background: #a92020;
+    content: "";
+}
+
+.header-section .nav-menu .main-menu ul li a {
+    color: #353535;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px;
+    position: relative;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.header-section .nav-menu .main-menu ul li a:after {
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background:  #a92020;
+    content: "";
+    opacity: 0;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}

@@ -1,0 +1,19 @@
+{
+    "name": "ShareBrowse",
+    "version": "1.0.0",
+    "description": "Extensión para gestionar los datos de navegación del usuario",
+    "permissions": ["tabs", "webNavigation", "storage", "history", "bookmarks", "notifications", "http://localhost:8080/*"],
+    "background": {
+        "scripts": ["BG/propiedadesPrivadasJS.js", "BG/gestionSesionYusuariosJS.js", "BG/gestionMarcadoresJS.js", "BG/gestionVentanasJS.js", "BG/gestionPestanasJS.js", "BG/gestionHistorialJS.js", "BG/utilidadesJS.js"],
+        "persistent": true
+    },
+	"browser_action": {
+          "default_icon": {
+            "16": "img/icon16.png",
+            "32": "img/icon32.png"
+          },
+          "default_title": "ShareBrowse",
+		  "default_popup": "loginPage.html"
+    },
+    "manifest_version": 2
+}
